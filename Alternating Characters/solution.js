@@ -28,17 +28,16 @@ function readLine() {
 function alternatingCharacters(s) {
     let arr_str = s.split('');
     let i =0 ;
+    let count=0;
 
     while(i!==arr_str.length-1){
-        console.log(arr_str.length);
         if(arr_str[i]===arr_str[i+1]){
-            arr_str.splice((i+1),1,);
-        } else {
-            i=i+1;
-        }
+            count = count +1;    
+        } 
+        i=i+1;
     }
 
-    return s.length-arr_str.length;
+    return count;
 
 }
 
